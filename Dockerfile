@@ -4,7 +4,7 @@ FROM ibmcom/db2express-c:latest
 #ENV LICENSE=accept
 
 #Copy sample script 
-COPY --chown=db2inst1:db2inst1 . /
+COPY . /
 
 # Install DB2 Express-C
 RUN /entrypoint.sh "true"
