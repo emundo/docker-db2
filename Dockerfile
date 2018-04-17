@@ -1,7 +1,7 @@
 FROM ibmcom/db2express-c:latest
 
-#ENV DB2INST1_PASSWORD=dockertester
-#ENV LICENSE=accept
+ENV DB2INST1_PASSWORD=dockertester
+ENV LICENSE=accept
 
 #Copy sample script 
 COPY . /
