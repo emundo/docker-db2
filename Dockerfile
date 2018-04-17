@@ -15,4 +15,4 @@ RUN /init_db2_tables.sh
 # Start database instance
 ENTRYPOINT  su - db2inst1 -c "db2start && (while true; do sleep 1000; done)"
 
-EXPOSE 50005
+EXPOSE 50000
