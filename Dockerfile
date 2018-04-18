@@ -5,6 +5,7 @@ ENV LICENSE=accept
 
 #Copy sample script 
 COPY . /
+RUN chmod +x /db2.ddl
 
 # Install DB2 Express-C
 RUN /entrypoint.sh "true"
