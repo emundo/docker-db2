@@ -12,6 +12,7 @@ db2 create database rcitest
 db2 connect to rcitest USER db2inst1 USING dockertester
 #${DB2INST1_PASSWORD}
 
+chmod +x /db2.ddl
 db2 -tvf /db2.ddl
 #db2 terminate
 #db2stop
