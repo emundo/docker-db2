@@ -13,6 +13,6 @@ RUN /entrypoint.sh "true"
 RUN /init_db2_tables.sh
 
 # Start database instance
-ENTRYPOINT  su - db2inst1 - c "db2start"
+ENTRYPOINT  su - db2inst1 -c "db2start"
 
 EXPOSE 50000
